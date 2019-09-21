@@ -2,42 +2,64 @@
 
 参考：https://dotinstall.com/lessons/basic_c9_v2
 
+
+
 ###  CloudWatchで請求アラート表示
 
 ##### 目的:　AWSはお金がかかるため、請求時にメールを飛ばすようにする
 
 ・CloudWatchを選択
+
 ・請求を選択 
+
 ・アラート表示する金額とアドレスを登録する
+
+
 
 ###  Cloud9利用ユーザ作成
 
 ##### 目的:　AWSはサービスが多様なため、Cloud9だけ利用できるユーザーを追加する
 
 ・IAMを選択
+
 ・グループを作成。【Cloud9User】と名付ける。
+
 ・ポリシーのアタッチで、【AWSCloud9User】を選択
+
 ・確認後、OK選択
+
 ・IAMを選択
+
 ・ユーザを作成。【Cloud9User】と名付ける。
+
 ・確認後、OK選択
+
 ・以下のように設定　
 		・AWSマネージメントコンソールアクセスにチェック。
 		・自動生成パスワードにチェック
 		・パスワードのリセットにチェック
 
 ・グループ選択で上記で作成したグループを選択
+
 ・タグは空欄にして、ユーザ作成。表示されるCSVファイルはダウンロードしてとっておく。
+
+
 
 ###  Cloud9作成
 
 ##### 目的:　いよいよCloud9の利用開始する
 
 ・Cloud9を選択
+
 ・CreateProjectを選択
+
 ・Nameに、【MyWorkspase】を入れて、次へ
+
 ・使用サーバーをEC2とインスタンスタイプをt2.microとプラットフォームをAmazonLinuxを選択して次へ
+
 ・確認問題なければ、OK選択。構築に時間かかる。。。
+
+
 
 ###  Cloud9の環境を確認する
 
@@ -46,13 +68,20 @@
 ・ターミナルより以下を実行
 
 cat /proc/version OSの確認
+
 mysql --version　MySQLの確認 
+
 php -v　PHPのバージョン確認 
+
 node -v　Nodeの確認 
+
 ruby -v　Rubyのバージョン確認
+
 rails -v　RubyOnRailsのバージョン確認  
 
 ![image-20190921110231281](./image-20190921110231281.png)
+
+
 
 ###  Cloud9の環境を更新する
 
@@ -73,6 +102,8 @@ sudo ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 sudo reboot
 date
 ```
+
+
 
 ###  Cloud9の環境を更新する〜MYSQL
 
@@ -116,6 +147,8 @@ sudo update-alternatives --config php
 php -v
 ```
 
+
+
 ###  Cloud9のPHPを作成する
 
 ##### 目的:　 Cloud9でPHPファイルを作成
@@ -140,6 +173,8 @@ echo "Hello from PHP!";
 
 ![image-20190921111952233](./image-20190921111952233.png)
 
+
+
 ###  Cloud9の便利機能を把握する
 
 ##### 目的:　 Cloud9のその他便利機能
@@ -161,6 +196,10 @@ echo "Hello from PHP!";
 ・Fileー＞NewFromTemplateから対象のファイルを選択する
 
 ![image-20190921113758636](./image-20190921113758636.png)
+
+
+
+
 
 #### 上記よりもっとカンタンにCloud9でアプリケーションを構築する
 
