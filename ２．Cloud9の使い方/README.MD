@@ -57,6 +57,8 @@
 
 ・使用サーバーをEC2とインスタンスタイプをt2.microとプラットフォームをAmazonLinuxを選択して次へ
 
+※　Cost-saving setting（コスト削減のオプション）　デフォルト３０分
+
 ・確認問題なければ、OK選択。構築に時間かかる。。。
 
 
@@ -196,8 +198,6 @@ echo "Hello from PHP!";
 ・Fileー＞NewFromTemplateから対象のファイルを選択する
 
 ![image-20190921113758636](./image-20190921113758636.png)
-
-
 
 
 
